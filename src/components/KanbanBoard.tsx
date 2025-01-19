@@ -32,6 +32,10 @@ const defaultCols = [
     title: "In progress",
   },
   {
+    id: "in-review" as const,
+    title: "In Review",
+  },
+  {
     id: "done" as const,
     title: "Done",
   },

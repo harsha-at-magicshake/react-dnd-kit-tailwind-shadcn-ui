@@ -66,12 +66,12 @@ export function TaskCard({ task, isOverlay }: TaskCardProps) {
       className={variants({
         dragging: isOverlay ? "overlay" : isDragging ? "over" : undefined,
       })}
+      {...attributes}
+      {...listeners}
     >
       <CardHeader className="px-3 py-3 space-between flex flex-row border-b-2 border-secondary relative">
         <Button
           variant={"ghost"}
-          {...attributes}
-          {...listeners}
           className="p-1 text-secondary-foreground/50 -ml-2 h-auto cursor-grab"
         >
           <span className="sr-only">Move task</span>
